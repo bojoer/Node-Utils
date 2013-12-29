@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "file": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "node-inspector": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha -G",
+    "watchtest": "node_modules/.bin/mocha -w -G"
+  }
+}
