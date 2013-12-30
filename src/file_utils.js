@@ -1,5 +1,4 @@
 var fs = require('fs');
-var file = require('file');
 var crypto = require('crypto');
 
 

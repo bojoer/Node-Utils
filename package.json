@@ -1,13 +1,11 @@
 {
   "dependencies": {
-    "file": "*",
     "sprintf-js": "*"
   },
   "devDependencies": {
     "mocha": "*",
     "node-inspector": "*",
     "should": "*",
-    "sinon": "*",
     "istanbul": "*"
   },
   "scripts": {
