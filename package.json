@@ -1,12 +1,17 @@
 {
   "dependencies": {
-    "sprintf-js": "*"
+    "sprintf-js": "*",
+    "path": "*",
+    "mkdirp": "*",
+    "rimraf": "*"
   },
   "devDependencies": {
     "mocha": "*",
     "node-inspector": "*",
     "should": "*",
-    "istanbul": "*"
+    "istanbul": "*",
+    "randomstring": "*",
+    "sinon": "*"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha -G",
