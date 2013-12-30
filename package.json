@@ -6,10 +6,14 @@
   "devDependencies": {
     "mocha": "*",
     "node-inspector": "*",
-    "should": "*"
+    "should": "*",
+    "sinon": "*",
+    "istanbul": "*"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha -G",
-    "watchtest": "node_modules/.bin/mocha -w -G"
+    "watchtest": "node_modules/.bin/mocha -w -G",
+    "coverage": "istanbul cover node_modules/.bin/_mocha",
+    "viewcoverage": "open coverage/lcov-report/index.html"
   }
 }
