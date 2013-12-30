@@ -47,7 +47,15 @@ describe('utils', function(){
     });
 
     it('should return a error if unable to hash file', function(){
-      // TODO: Unsure how to do this
+      var filePath = __dirname + '/tmp/unable-to-hash-file.txt';
+      fs.writeFile(filePath, 'test', function() {
+        file_utils.stat_with_hash(filePath, function(err, result) {
+          err.should.equal('Unable to hash file');
+          (result == null).should.be.true
+        });
+        fs.unlink(filePath);
+      });
+
     });
 
     it('should return a stat and hash for a valid file', function(){

@@ -37,6 +37,5 @@ stat_with_hash = function(path, callback) {
 }
 
 
-
 exports.hash = hash;
 exports.stat_with_hash = stat_with_hash;
