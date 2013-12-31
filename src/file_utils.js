@@ -44,7 +44,7 @@ create_directory_and_move_file = function(oldPath, newPath, callback) {
     }else{
         var newDirectory = path.dirname(newPath);
         mkdirp(newDirectory, function(mkdirp_err) {
-            // TODO: npUnable to come up with a test to make this happen
+            // TODO: Unable to come up with a test to make this happen
             // if(mkdirp_err){
             //     callback(mkdirp_err);
             // }

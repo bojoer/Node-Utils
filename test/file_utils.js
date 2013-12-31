@@ -57,6 +57,9 @@ describe('file_utils', function(){
     });
 
     it('should return a error if unable to hash file', function(){
+      // TODO: Fix test since this has a horrible race condition
+      // with the final unlink
+      
       fs.writeFileSync(file_path, 'test');
 
       file_utils.stat_with_hash(file_path, function(err, result) {
